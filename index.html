@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="login-singup-form">
+        <div>
+            <h2 id="header-text">Login</h2>
+            <form id="form" class="form" autocomplete="off">
+                <input id="username-input" class="username-input" type="text" placeholder="Username">
+                <!-- <div id="email-input-fild" style="width: 100%;"></div> -->
+                <input type="text" id="email-input-fild" style="width: 100%;" placeholder="Email" class="email-input">
+                <input id="pass-input" class="pass-input" type="password" placeholder="Password">
+                <div class="check-box">
+                    <label>Show Password</label>
+                    <input onclick="ShowHidePass()" class="show-hide-pass" type="checkbox">
+                </div>
+                <div id="Er-Sub" style="margin-top: 5px; margin-bottom: 5px;"></div>
+                <button id="submit" class="submit" type="submit">Login</button>
+            </form>
+        </div>
+        
+        <div class="footer-signup">
+            <p id="text-q-acc">Dont have an account?</p>
+            <a id="link-signup" class="link-signup">Sign up</a>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

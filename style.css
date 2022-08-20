@@ -1,0 +1,105 @@
+html , body{
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(bg.jpg);
+    background-size: cover;
+}
+
+/* ------------------------------------------------------ */
+.login-singup-form{
+    width: 300px;
+    height: 400px;
+    /* border: 1px solid gray; */
+    padding: 10px;
+    padding-top: 20px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    background-color: rgba(255, 255, 255, 0.363);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.check-box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* .show-hide-pass{
+    
+} */
+
+.username-input , .pass-input , .email-input , .submit{
+    width: 100%;
+    height: 2.2rem;
+    border: 1px solid rgba(211, 211, 211, 0.397);
+    outline: none;
+    border-radius: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    background-color: rgba(255, 255, 255, 0.356);
+}
+
+.email-input{
+    display: none;
+}
+
+.submit{
+    background: linear-gradient(90deg , rgb(216, 0, 54) , rgb(155, 0, 34));
+    height: 2.2rem;
+    border: 0;
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg , rgb(151, 0, 38) , rgb(184, 0, 40));
+}
+
+.footer-signup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link-signup{
+    color: rgb(216, 0, 54);
+}
+
+.link-signup:hover{
+    cursor: pointer;
+}
