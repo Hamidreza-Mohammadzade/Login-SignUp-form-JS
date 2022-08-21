@@ -59,6 +59,9 @@ Form.addEventListener('submit' , (event)=>{
             if ((GetItemLocal.find((item) => item.username === UserName.value)) &&
             (GetItemLocal.find((item) => item.pass === Password.value))){
                 ErrorOrSubmit.innerText = 'You are Login'
+                if ((UserName.value == 'admin') && (Password.value == 1234567890)){
+                    window.location.href = 'admin.html'
+                }
                 setTimeout(() => {
                     ErrorOrSubmit.innerText = ''
                 }, 3000);
