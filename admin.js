@@ -5,9 +5,16 @@ const EmailUser = document.getElementById('Email-user')
 const PasswordUser = document.getElementById('Password-user')
 const UsersListAdmin = document.getElementById('User-List')
 
+const Logout = document.getElementById('Logout')
+
+const NameAcc = document.getElementById('name-acc')
+const ImgAcc = document.getElementById('img-acc')
+
+
 let ListUserLocal = localStorage.getItem('User')
 ListUserLocal = JSON.parse(ListUserLocal)
 
+// =============================================create row========================================
 for (let i = 0 ; i < ListUserLocal.length ; i = i + 1){
     var DivTag = document.createElement('div')
     DivTag.className = 'row-user-show'
@@ -30,3 +37,18 @@ for (let i = 0 ; i < ListUserLocal.length ; i = i + 1){
     
     UsersListAdmin.appendChild(DivTag)
 }
+
+// ========================================Logout=============================================
+
+Logout.addEventListener('click' , () =>{
+    window.location.href = 'index.html'
+})
+
+// ======================================Header Account========================================
+
+let accountname = ListUserLocal[0].username
+
+NameAcc.innerText = `Hello ${accountname}`
+
+let accountimage = accountname[0]
+ImgAcc.innerText = accountimage.toUpperCase()
