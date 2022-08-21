@@ -31,6 +31,7 @@ const TextQAcc = document.getElementById('text-q-acc')
 
 // let EmailFild = '<input type="text" placeholder="Email" class="email-input">'
 
+const EmailRegex = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/
 
 Signup.addEventListener('click' , ()=>{
     if (Signup.innerText == 'Sign up'){
@@ -82,7 +83,8 @@ Form.addEventListener('submit' , (event)=>{
         }
     }else{
 
-        if ((UserList.find((item1) => item1.username === UserName.value)) ||
+        if (EmailRegex.test(EmailInputFild.value)){
+            if ((UserList.find((item1) => item1.username === UserName.value)) ||
             (UserList.find((item2) => item2.email === EmailInputFild.value))){
                 ErrorOrSubmit.innerText = 'There is a similar username or email!'
                 setTimeout(() => {
@@ -105,6 +107,14 @@ Form.addEventListener('submit' , (event)=>{
 
                 console.log('sign up' , UserList)
             }
+
+        }else{
+            ErrorOrSubmit.innerText = 'Invalid email!'
+            setTimeout(() => {
+                ErrorOrSubmit.innerText = ''
+            }, 3000);
+        }
+        
     }
     
 })
