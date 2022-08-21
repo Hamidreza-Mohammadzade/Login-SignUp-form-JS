@@ -1,0 +1,93 @@
+html , body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* -------------------------------------------------header-------------------------------------------------- */
+.header{
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-top: 10px;
+
+    border-bottom: 2px solid lightgray;
+    box-shadow: 0 3px 8px rgb(219, 219, 219);
+}
+
+.img-acc{
+    width: 30px;
+    height: 30px;
+    border: 1px solid gray ;
+    border-radius: 30px;
+    background-color: lightgray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+}
+/* -------------------------------------------------view--------------------------------------- */
+.box-view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+}
+
+.Users-List{
+    width: 70%;
+    height: 300px;
+
+    border: 1px solid lightgray;
+    border-radius: 20px;
+
+    box-shadow: 0 0 10px gray;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 3px;
+    padding-bottom: 10px;
+    row-gap: 5px;
+}
+
+.nav-userlist{
+    border-bottom: 1px solid lightgray;
+    border-radius: 30px;
+    width: 100%;
+    height: 30px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* -------------------------------------------row----------------------------------------------- */
+.row-user-show{
+    width: 90%;
+    height: 35px;
+    border: 1px solid lightgray;
+    border-radius: 40px;
+
+    box-shadow: 0 0 5px gray;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
