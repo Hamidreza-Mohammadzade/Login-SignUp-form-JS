@@ -60,7 +60,7 @@ Form.addEventListener('submit' , (event)=>{
             (GetItemLocal.find((item) => item.pass === Password.value))){
                 ErrorOrSubmit.innerText = 'You are Login'
                 if ((UserName.value == 'admin') && (Password.value == 1234567890)){
-                    window.location.href = 'admin.html'
+                    window.location.href = 'Admin CMS/admin.html'
                 }
                 setTimeout(() => {
                     ErrorOrSubmit.innerText = ''
