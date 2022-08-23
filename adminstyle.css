@@ -8,6 +8,7 @@ html , body{
 body{
     background-image: url(bgadmin.jpg);
     background-size: cover;
+    font-family: Jaldi;
 }
 
 /* -------------------------------------------------header-------------------------------------------------- */
@@ -122,4 +123,10 @@ body{
 /* --------------------------------------------------------------- */
 .name-acc , .img-acc{
     font-weight: bold;
+}
+
+/* ----------------------------------------------font---------------------------------------------- */
+@font-face{
+    font-family: 'Jaldi';
+    src: url(Font/Jaldi.ttf);
 }

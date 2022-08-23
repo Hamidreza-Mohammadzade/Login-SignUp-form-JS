@@ -11,6 +11,7 @@ body{
     align-items: center;
     background-image: url(bg.jpg);
     background-size: cover;
+    font-family: Jaldi;
 }
 
 /* ------------------------------------------------------ */
@@ -51,10 +52,6 @@ body{
     display: flex;
     justify-content: flex-end;
 }
-
-/* .show-hide-pass{
-    
-} */
 
 .username-input , .pass-input , .email-input , .submit{
     width: 100%;
@@ -102,4 +99,11 @@ body{
 
 .link-signup:hover{
     cursor: pointer;
+}
+
+/* ----------------------------font------------------------------------------------- */
+
+@font-face{
+    font-family: 'Jaldi';
+    src: url(Font/Jaldi.ttf);
 }
