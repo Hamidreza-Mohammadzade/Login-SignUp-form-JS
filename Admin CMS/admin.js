@@ -41,7 +41,7 @@ for (let i = 0 ; i < ListUserLocal.length ; i = i + 1){
 // ========================================Logout=============================================
 
 Logout.addEventListener('click' , () =>{
-    window.location.href = 'index.html'
+    window.location.href = '../index.html'
 })
 
 // ======================================Header Account========================================
